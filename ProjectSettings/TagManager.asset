@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - DeadZone
+  - Enemy
+  - Interact
+  - Checkpoint
+  - Stop
+  - Rotate
+  - Purple
+  - Snow
+  - TurningSpike
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - MainLevel
+  - 
+  - Enemies
+  - 
+  - Player
+  - 
+  - Puzzle
+  - 
+  - Helpers
+  - 
+  - SpeedUp
+  - 
+  - 
+  - NoCollPlayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BG
+    uniqueID: 159277165
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: MainLevel
+    uniqueID: 4273343307
+    locked: 0
+  - name: Helpers
+    uniqueID: 1052781493
+    locked: 0
+  - name: Puzzle
+    uniqueID: 505345229
+    locked: 0
+  - name: Enemies
+    uniqueID: 2276700931
+    locked: 0
+  - name: Player
+    uniqueID: 289869785
+    locked: 0
