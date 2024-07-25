@@ -60,20 +60,26 @@ The only goal of the game is to pass all levels.
 
 # BOSS
 
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Boss.png" width="auto">
+
 ## Phase-1
 
 #### Follows you by jumping until the end of the level. If it hits you during this time, you will die and lose all your lives.
 
-<img src="" width="auto">
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Phase-1.gif" width="auto">
 
 ## Phase-2
 
-### It has 2 abilities, Uses skill by hitting the ground, becomes vulnerable after hitting the ground
+### It has 2 abilities, Uses skill by hitting the ground, becomes vulnerable after hitting the ground, it can sends spikes to you or can summon enemies
 
-<img src="" width="auto">
-
-#### it can sends spikes to you or can summon enemies
-
-<img src="" width="auto">
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Phase-2.gif" width="auto">
 
 The boss has 3 lives. If you take all 3 lives, you will defeat the boss.
+
+# Gameplay
+
+<img src="" width="auto">
+
+<img src="" width="auto">
+
+<img src="" width="auto">
