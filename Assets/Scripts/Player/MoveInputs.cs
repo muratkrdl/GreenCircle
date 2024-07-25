@@ -12,7 +12,7 @@ public class MoveInputs : MonoBehaviour
     public EventHandler On_PushingButton;
 
     [SerializeField] Rigidbody2D myRigidbody;
-
+    
     [SerializeField] float lerpTime;
 
     Vector2 moveInput;
@@ -54,6 +54,8 @@ public class MoveInputs : MonoBehaviour
 
     void Collision_OnGameFinished(object sender, EventArgs e)
     {
+        gameObject.layer = LayerMask.NameToLayer("Dead");
+        StandartManager.Instance.SetFollowCamera(null);
         gameFinish = true;
         isPushingLeftButton = false;
         isPushingRightButton = true;

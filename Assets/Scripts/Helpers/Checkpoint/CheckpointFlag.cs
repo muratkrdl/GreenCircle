@@ -21,6 +21,8 @@ public class CheckpointFlag : MonoBehaviour
         {
             animator.SetTrigger("Up");
 
+            SoundManager.Instancce.PlaySound2D("CheckpointFlag");
+
             RespawnPosition.On_RespawnPositionChanged?.Invoke(this, new() { newPosition = checkpointPosition.position } );
 
             GetComponent<BoxCollider2D>().enabled = false;

@@ -18,6 +18,14 @@ public class PlayerUIManager : MonoBehaviour
             return healthBar;
         }
     }
+    
+    public PanelUI GetPanelUI
+    {
+        get
+        {
+            return panelUI;
+        }
+    }
 
     void Awake() 
     {

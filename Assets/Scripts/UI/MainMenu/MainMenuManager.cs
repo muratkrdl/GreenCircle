@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
     public static MainMenuManager Instance;
+
+    public EventHandler sceneChanging;
 
     [SerializeField] Animator menuAnimator;
 
@@ -36,6 +37,16 @@ public class MainMenuManager : MonoBehaviour
     void Start() 
     {
         Invoke(nameof(InvokeStart), .35f);
+
+        sceneChanging += MainMenuManager_SceneChanging;
+    }
+
+    void MainMenuManager_SceneChanging(object sender, EventArgs e)
+    {
+        foreach (var item in levelBlocks)
+        {
+            item.GetComponent<UnityEngine.UI.Button>().interactable = false;
+        }
     }
 
     void InvokeStart()
@@ -72,6 +83,11 @@ public class MainMenuManager : MonoBehaviour
     {
         FadeImage();
         Invoke(nameof(InvokeQuit), 0.65f);
+    }
+
+    void OnDestroy() 
+    {
+        sceneChanging -= MainMenuManager_SceneChanging;
     }
 
     void InvokeQuit()

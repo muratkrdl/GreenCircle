@@ -17,6 +17,8 @@ public class Collision : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     {
+        if(PauseUI.isGamePaused) return;
+
         if(other.CompareTag(TagManager.DEAD_ZONE))
         {
             StandartManager.Instance.SetFollowCamera(null);
@@ -42,6 +44,8 @@ public class Collision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) 
     {
+        if(PauseUI.isGamePaused) return;
+
         if(other.transform.CompareTag(TagManager.ENEMY))
         {
             if(transform.position.y - other.transform.position.y > enemyKillOffset)

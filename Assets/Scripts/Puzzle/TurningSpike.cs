@@ -10,8 +10,6 @@ public class TurningSpike : MonoBehaviour
 
     void Update() 
     {
-        // dönme sesi
-
         foreach (var item in rotateObj)
         {
             if(item == rotateObj[0])

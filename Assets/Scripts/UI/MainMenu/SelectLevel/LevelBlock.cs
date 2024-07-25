@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -70,6 +71,7 @@ public class LevelBlock : MonoBehaviour
 
     public void On_Click_LoadScene()
     {
+        MainMenuManager.Instance.sceneChanging?.Invoke(this, EventArgs.Empty);
         MainMenuManager.Instance.FadeImage();
         Invoke(nameof(InvokeLoadScene), 1f);
     }

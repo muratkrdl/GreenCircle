@@ -27,6 +27,8 @@ public class HealthBar : MonoBehaviour
 
     [SerializeField] Animator animator;
 
+    [SerializeField] Animator playerAnimator;
+
     int health;
 
     bool isLive;
@@ -70,14 +72,17 @@ public class HealthBar : MonoBehaviour
                     RespawnPosition.Instance.InvokeGoCheckPoint();
                 break;
             case 1:
+                heartImages[2].sprite = heartSprites[0];
                 heartImages[1].sprite = heartSprites[0];
                 if(damageSource == DamageSource.world)
                     RespawnPosition.Instance.InvokeGoCheckPoint();
                 break;
             default:
+                heartImages[2].sprite = heartSprites[0];
+                heartImages[1].sprite = heartSprites[0];
                 heartImages[0].sprite = heartSprites[0];
                 SetIsLive(false);
-                animator.SetTrigger("Die");
+                playerAnimator.SetTrigger("Die");
                 float delay = 0;
                 if(damageSource == DamageSource.world)
                 {

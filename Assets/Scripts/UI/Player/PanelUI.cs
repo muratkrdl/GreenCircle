@@ -20,6 +20,10 @@ public class PanelUI : MonoBehaviour
 
     [SerializeField] Sprite[] starSprites;
 
+    [SerializeField] AudioSource showStarAudioSource;
+
+    float volumeComplier = .2f;
+
     int colledtedAmount = 0;
 
     bool isGameFinishedWithFinishLine = false;
@@ -83,6 +87,8 @@ public class PanelUI : MonoBehaviour
         {
             startImages[i].sprite = choosenStarSprite;
             startImages[i].GetComponent<Animation>().Play();
+            showStarAudioSource.volume += volumeComplier;
+            showStarAudioSource.Play();
             yield return new WaitForSeconds(.57f);
         }
 

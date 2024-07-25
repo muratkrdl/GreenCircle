@@ -11,17 +11,7 @@ public class StandartManager : MonoBehaviour
     [SerializeField] Camera mainCamera;
     [SerializeField] CinemachineVirtualCamera cinemachineVirtualCamera;
 
-    [SerializeField] Transform[] points;
-
     [SerializeField] Crate[] crates;
-
-    public int GetPointsAmount
-    {
-        get
-        {
-            return points.Length;
-        }
-    }
 
     void Awake() 
     {

@@ -7,8 +7,6 @@ public class PointCounter : MonoBehaviour
 {
     public static EventHandler OnPointCollected;
     
-    int maxPointAmount;
-
     int currentPointAmount = 0;
 
     public int GetCollectedPointAmount
@@ -17,12 +15,14 @@ public class PointCounter : MonoBehaviour
         {
             return currentPointAmount;
         }
+        set
+        {
+            currentPointAmount = value;
+        }
     }
 
     void Start() 
     {
-        maxPointAmount = StandartManager.Instance.GetPointsAmount;
-
         OnPointCollected += PointCounter_OnStarCollected;
     }
 

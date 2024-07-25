@@ -11942,6 +11942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4406981944337115912, guid: d8b35634fb79c4f4282072aa5614e51b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6291702156435356605, guid: d8b35634fb79c4f4282072aa5614e51b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
