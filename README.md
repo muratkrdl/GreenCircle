@@ -14,6 +14,48 @@ The only goal of the game is to pass all levels.
 
 <img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Stars.gif" width="auto">
 
-## The stars you collect unlock the next level
+## There are 2 flags in each level, when you die or fall down, you will respawn at these flag points.
 
-<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/SelectLevel.png" width="auto">
+<img src="" width="auto">
+
+## StickyWalls slow down the fall
+
+<img src="" width="auto">
+
+## Frozen ground increases your movement speed when standing on frozen ground
+
+<img src="" width="auto">
+
+## Spikes - When you touch spikes, it reduces your health 1 point.
+
+<img src="" width="auto">
+
+## There are enemies in some levels, you have to jump on them to kill them
+
+<img src="" width="auto">
+
+## Key and Door -- You need to the key to open the door
+
+<img src="" width="auto">
+
+## WoodPlatform-1 -- The box in the middle comes out at regular intervals, you can jump on it when it comes out.
+
+<img src="" width="auto">
+
+## You can move the boxes to pass obstacles
+
+<img src="" width="auto">
+
+## SpringBoard -- When you tap on it, it will make you jump a certain amount of air.
+
+<img src="" width="auto">
+
+## WoodPlatform-2 -- moves in a certain direction
+
+<img src="" width="auto">
+
+## TurningSpikes -- It kills you when you touch it
+
+<img src="" width="auto">
+
+
