@@ -78,8 +78,21 @@ The boss has 3 lives. If you take all 3 lives, you will defeat the boss.
 
 # Gameplay
 
-<img src="" width="auto">
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Gameplay-1.gif" width="auto">
 
-<img src="" width="auto">
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Gameplay-2.gif" width="auto">
 
-<img src="" width="auto">
+<img src="https://github.com/muratkrdl/GreenCircle/blob/main/Pictures/Gameplay-3.gif" width="auto">
+
+
+# Builds
+
+## Windows
+
+
+
+## Android
+
+
+
+
