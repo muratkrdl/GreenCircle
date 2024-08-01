@@ -90,6 +90,6 @@ The boss has 3 lives. If you take all 3 lives, you will defeat the boss.
 
 #### Android
 
-https://drive.google.com/file/d/1PgXM_lOfyFL7tDfdL0cfrrPnhvU1DBF5/view?usp=sharing
+https://drive.google.com/file/d/1SQ6vIxgEQMzax_v0e_ECnvzEX_NJ-8k4/view?usp=sharing
 
 
