@@ -1722,7 +1722,7 @@ Transform:
   m_GameObject: {fileID: 600594589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -10}
+  m_LocalPosition: {x: 1, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2706,7 +2706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 1, y: 0, z: -10}
+  m_FollowOffset: {x: 1, y: 0, z: -9}
   m_XDamping: 2
   m_YDamping: 2
   m_ZDamping: 1
@@ -3886,7 +3886,7 @@ Transform:
   m_GameObject: {fileID: 1762843203}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: -10}
+  m_LocalPosition: {x: 1, y: 0, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5725,16 +5725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1762843206}
   cinemachineVirtualCamera: {fileID: 600594590}
-  points:
-  - {fileID: 976488889115415385}
-  - {fileID: 2497302046177803007}
-  - {fileID: 869074123332128541}
-  - {fileID: 4664579528125064614}
-  - {fileID: 4561134612138968961}
-  - {fileID: 3561104006080222710}
-  - {fileID: 2403492630953451108}
-  - {fileID: 163643381971751235}
-  - {fileID: 2693795510984271065}
   crates:
   - {fileID: 1175823372}
 --- !u!212 &1125546879638467434

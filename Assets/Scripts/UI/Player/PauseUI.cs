@@ -17,6 +17,7 @@ public class PauseUI : MonoBehaviour
     public void OnClick_Button()
     {
         Time.timeScale = 1;
+        isGamePaused = false;
     }
 
     public void OnClick_ContinueButton()
@@ -26,7 +27,7 @@ public class PauseUI : MonoBehaviour
 
     void SetPauseMenu(bool value)
     {
-        isGamePaused = true;
+        isGamePaused = value;
         pauseMenu.SetActive(value);
         pauseButton.interactable = !value;
     }

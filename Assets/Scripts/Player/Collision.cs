@@ -71,6 +71,7 @@ public class Collision : MonoBehaviour
             SoundManager.Instancce.PlaySound2D("KilledFromTurningSpike");
             // kan efekti
             StandartManager.Instance.SetFollowCamera(null);
+            GetComponent<Animator>().enabled = true;
             GetComponent<Animator>().SetTrigger("BigSpike");
             PlayerUIManager.Instance.GetHealthBar.OnDecreaseHealthEvent?.Invoke(this, new() { amount = 1, damageSource = DamageSource.world } );
         }

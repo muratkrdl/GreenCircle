@@ -57,39 +57,38 @@ public class MoveInputs : MonoBehaviour
         gameObject.layer = LayerMask.NameToLayer("Dead");
         StandartManager.Instance.SetFollowCamera(null);
         gameFinish = true;
+        moveInput = Vector2.zero;
         isPushingLeftButton = false;
-        isPushingRightButton = true;
+        isPushingRightButton = false;
     }
 
     void Update()
     {
         if(gameFinish)
         {
-            if(isPushingLeftButton)
-                isPushingLeftButton = false;
-            if(!isPushingRightButton)
-                isPushingRightButton = true;
+            moveInput.x = 1;
             return;
         }
 
         SetMoveInput();
 
-        if(Input.GetKey(KeyCode.A))
-        {
-            isPushingLeftButton = true;
-        }
-        else
-        {
-            isPushingLeftButton = false;
-        }
-        if(Input.GetKey(KeyCode.D))
-        {
-            isPushingRightButton = true;
-        }
-        else
-        {
-            isPushingRightButton = false;
-        }
+        // if(Input.GetKey(KeyCode.D))
+        // {
+        //     isPushingRightButton = true;
+        // }
+        // else
+        // {
+        //     isPushingRightButton = false;
+        // }
+
+        // if(Input.GetKey(KeyCode.A))
+        // {
+        //     isPushingLeftButton = true;
+        // }
+        // else
+        // {
+        //     isPushingLeftButton = false;
+        // }
     }
 
     void SetMoveInput()

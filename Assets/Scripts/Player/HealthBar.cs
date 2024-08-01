@@ -89,7 +89,6 @@ public class HealthBar : MonoBehaviour
                     delay = 2;
                 }
                 Collision.OnGameFinished?.Invoke(this, EventArgs.Empty);
-                GetComponentInParent<Animator>().SetTrigger("Die");
                 PlayerUIManager.Instance.InvokeShowPanel(delay);
                 break;
         }

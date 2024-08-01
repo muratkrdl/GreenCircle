@@ -43,6 +43,8 @@ public class LevelInformationHolder : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Application.targetFrameRate = 60;
     }
 
     void Start()
@@ -65,7 +67,7 @@ public class LevelInformationHolder : MonoBehaviour
             {
                 if(!item.GetIsLocked)
                 {
-                    if(currentlyPlayingLevelName == item.GetLoadScene.name)
+                    if(currentlyPlayingLevelName == item.GetLoadScene)
                     {
                         item.HMStarHave = currentlyPlayingLevelGainedStarAmount;
                         item.ShowStars();

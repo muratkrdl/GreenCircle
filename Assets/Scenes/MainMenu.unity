@@ -223,6 +223,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: 408c6b91ceeea2b46b1d7f01b6921590, type: 3}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
       objectReference: {fileID: 204802012}
@@ -347,6 +351,10 @@ PrefabInstance:
       propertyPath: loadScene
       value: 
       objectReference: {fileID: 102900000, guid: e4085dde8754b5246af2e86f60e009f8, type: 3}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-2
+      objectReference: {fileID: 0}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
@@ -540,8 +548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1920, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 2160, y: 0}
+  m_SizeDelta: {x: 2160, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125989053
 MonoBehaviour:
@@ -814,6 +822,10 @@ PrefabInstance:
       propertyPath: loadScene
       value: 
       objectReference: {fileID: 102900000, guid: 5f1b154c71b92e241815df3734aad592, type: 3}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-7
+      objectReference: {fileID: 0}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
@@ -1792,6 +1804,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: 705956c3ed11ac546b0b841a91217e30, type: 3}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
       objectReference: {fileID: 1172340564}
@@ -1875,10 +1891,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43c646c4d2502424c92289618bc64df8, type: 3}
   - {fileID: 21300000, guid: f00ab1891e2b1e54bb7244c1f821fbd6, type: 3}
   - {fileID: 21300000, guid: bc92263222582b14199825528ba17fa4, type: 3}
-  - {fileID: 21300000, guid: 748011fdbe2f0254f99c5c23488d8b60, type: 3}
   - {fileID: 21300000, guid: 1021b88e912d1a84b8da41a3c384a07a, type: 3}
   - {fileID: 21300000, guid: 22050c2ed681f9c48b72f025790a2282, type: 3}
-  - {fileID: 21300000, guid: 5f054004f20ff8545b5eb389d4291eff, type: 3}
   - {fileID: 21300000, guid: e047095ef6b07874d8a6d8dbb2295523, type: 3}
   counterText: {fileID: 1799110281}
   isFace: 1
@@ -2786,6 +2800,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: 3eaefe905a53349478e6c695a1a8f158, type: 3}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
       objectReference: {fileID: 38522600}
@@ -3255,6 +3273,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: f274788bfecf1104085cf6ae61e1f22a, type: 3}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
       objectReference: {fileID: 1935853493}
@@ -3459,7 +3481,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
+  m_HDR: 0
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -3521,8 +3543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1920, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: -2160, y: 0}
+  m_SizeDelta: {x: 2160, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1525646271
 GameObject:
@@ -4034,10 +4056,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43c646c4d2502424c92289618bc64df8, type: 3}
   - {fileID: 21300000, guid: f00ab1891e2b1e54bb7244c1f821fbd6, type: 3}
   - {fileID: 21300000, guid: bc92263222582b14199825528ba17fa4, type: 3}
-  - {fileID: 21300000, guid: 748011fdbe2f0254f99c5c23488d8b60, type: 3}
   - {fileID: 21300000, guid: 1021b88e912d1a84b8da41a3c384a07a, type: 3}
   - {fileID: 21300000, guid: 22050c2ed681f9c48b72f025790a2282, type: 3}
-  - {fileID: 21300000, guid: 5f054004f20ff8545b5eb389d4291eff, type: 3}
   - {fileID: 21300000, guid: e047095ef6b07874d8a6d8dbb2295523, type: 3}
 --- !u!4 &1741304512
 Transform:
@@ -4105,7 +4125,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 2160, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
@@ -4786,6 +4806,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102900000, guid: 14a5b9fd8e065b9439883360f21f43f5, type: 3}
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: previousLevelBlock
       value: 
       objectReference: {fileID: 727614604}
@@ -4979,7 +5003,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 2160, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2079903179
 GameObject:
@@ -5268,6 +5292,10 @@ PrefabInstance:
     - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: lockedValue
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136114875504395485, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
+      propertyPath: loadSceneName
+      value: Leve 1-1
       objectReference: {fileID: 0}
     - target: {fileID: 8007178997153872997, guid: 24f3dd8fdf07d9e458cdc5430bcd5819, type: 3}
       propertyPath: m_Enabled

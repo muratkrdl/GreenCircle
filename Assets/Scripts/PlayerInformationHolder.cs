@@ -44,7 +44,7 @@ public class PlayerInformationHolder : MonoBehaviour
 
     public Sprite GetChoosenFaceSprite()
     {
-        return faceSprites[PlayerPrefs.GetInt(CHOOSEN_BALL_KEY)];
+        return faceSprites[PlayerPrefs.GetInt(CHOOSEN_FACE_KEY)];
     }
 
 }

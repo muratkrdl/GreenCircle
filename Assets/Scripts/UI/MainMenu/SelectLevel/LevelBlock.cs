@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,7 @@ using UnityEngine.UI;
 
 public class LevelBlock : MonoBehaviour
 {
-    [SerializeField] SceneAsset loadScene;
+    [SerializeField] string loadSceneName;
 
     [SerializeField] Image[] starImages;
     [SerializeField] Sprite[] starSprites;
@@ -61,16 +62,18 @@ public class LevelBlock : MonoBehaviour
         SetPlayerPrefs();
     }
 
-    public SceneAsset GetLoadScene
+    public string GetLoadScene
     {
         get
         {
-            return loadScene;
+            return loadSceneName;
         }
     }
 
     public void On_Click_LoadScene()
     {
+        if(isLocked) return;
+
         MainMenuManager.Instance.sceneChanging?.Invoke(this, EventArgs.Empty);
         MainMenuManager.Instance.FadeImage();
         Invoke(nameof(InvokeLoadScene), 1f);
@@ -78,7 +81,7 @@ public class LevelBlock : MonoBehaviour
 
     void InvokeLoadScene()
     {
-        SceneManager.LoadScene(loadScene.name);
+        SceneManager.LoadScene(loadSceneName);
     }
 
     public void CanBeOpen()
@@ -93,6 +96,10 @@ public class LevelBlock : MonoBehaviour
 
     public void ShowStars()
     {
+        if(PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) > hmStarHave -1)
+        {
+            return;
+        }
         Sprite gainedStar = starSprites[hmStarHave -1];
 
         for (int i = 0; i < hmStarHave; i++)
@@ -101,8 +108,8 @@ public class LevelBlock : MonoBehaviour
             starImages[i].sprite = gainedStar;
         }
 
-        if(PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) < hmStarHave -1)
-            PlayerPrefs.SetInt(gameObject.name + CHOOSEN_SPRITE_INDEX, hmStarHave -1);
+        if(PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) < hmStarHave)
+            PlayerPrefs.SetInt(gameObject.name + CHOOSEN_SPRITE_INDEX, hmStarHave);
     }
 
     void SetPlayerPrefs()
@@ -116,13 +123,18 @@ public class LevelBlock : MonoBehaviour
         {
             isLocked = false;
             lockedImage.enabled = false;
+            if(PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) == 0)
+            {
+                PlayerPrefs.SetInt(gameObject.name + CHOOSEN_SPRITE_INDEX, 0);
+            }
+            hmStarHave = PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX);
         }
 
         if(PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) == 0) return;
-        for (int i = 0; i < PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) + 1; i++)
+        for (int i = 0; i < PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX); i++)
         {
             starImages[i].enabled = true;
-            starImages[i].sprite = starSprites[PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX)];
+            starImages[i].sprite = starSprites[PlayerPrefs.GetInt(gameObject.name + CHOOSEN_SPRITE_INDEX) -1];
         }
     }
 

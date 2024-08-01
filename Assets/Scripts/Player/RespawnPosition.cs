@@ -55,4 +55,14 @@ public class RespawnPosition : MonoBehaviour
         StandartManager.Instance.SetCratesPos();
     }
 
+    IEnumerator ForAnimator()
+    {
+        yield return new WaitForEndOfFrame();
+
+        GetComponent<Animator>().enabled = false;
+        GetCustomizeSprites.Instance.SetCustomizeSprites();
+
+        StopAllCoroutines();
+    }
+
 }
