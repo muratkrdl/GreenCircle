@@ -86,7 +86,9 @@ public class LevelInformationHolder : MonoBehaviour
         }
         else
         {
+            nextLevel = false;
             currentlyPlayingLevelName = loadedScene.name;
+            currentlyPlayingLevelGainedStarAmount = 0;
         }
     }
     

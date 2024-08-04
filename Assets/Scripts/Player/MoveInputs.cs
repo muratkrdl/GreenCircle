@@ -72,23 +72,23 @@ public class MoveInputs : MonoBehaviour
 
         SetMoveInput();
 
-        // if(Input.GetKey(KeyCode.D))
-        // {
-        //     isPushingRightButton = true;
-        // }
-        // else
-        // {
-        //     isPushingRightButton = false;
-        // }
+        //if(Input.GetKey(KeyCode.D))
+        //{
+        //    isPushingRightButton = true;
+        //}
+        //else
+        //{
+        //    isPushingRightButton = false;
+        //}
 
-        // if(Input.GetKey(KeyCode.A))
-        // {
-        //     isPushingLeftButton = true;
-        // }
-        // else
-        // {
-        //     isPushingLeftButton = false;
-        // }
+        //if(Input.GetKey(KeyCode.A))
+        //{
+        //    isPushingLeftButton = true;
+        //}
+        //else
+        //{
+        //    isPushingLeftButton = false;
+        //}
     }
 
     void SetMoveInput()
